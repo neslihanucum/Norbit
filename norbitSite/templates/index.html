@@ -1,0 +1,277 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <!-- Header -->
+        <header class="header header-bg-lg header-bg-shape">
+            <div class="container-fluid p-lg-0">
+                <div class="row m-lg-0">
+                    <div class="col-lg-6 p-lg-0">
+                        <div class="max-585 ms-auto">
+                            <div class="header-content" dir="ltr">
+                                <!--
+                                 <h2>Görüntülerinizin her bir pikselinde gizli hikayeler var.</h2>
+                                <h2>Biz, bu hikayeleri ortaya çıkarıyor ve anlamlı sonuçlar sunuyoruz.</h2>
+                                <h1>Piksellerdeki Gizli Hikayeleri Ortaya Çıkarıyoruz</h1>
+                                <h1>Gelecek İçin Yeni Teknolojiler Üretiyoruz</h1>
+                                 -->
+                                <h2>Görsel Verilerin Gücünü Ortaya Çıkarın, Rekabetin Ötesine Geçin</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-image-shape">
+                <img src="{% static 'images/homepage-one/header-shape.png' %}" alt="shape">
+            </div>
+            <div class="header-animation-shapes animation-d-none">
+                <div class="header-animation-shape"></div>
+            </div>
+        </header>
+        <!-- Header -->
+        <!-- Feature-section -->
+        <section class="feature-section pt-min-100 pb-70">
+            <div class="container" dir="ltr">
+                <div class="section-title section-title-lg">
+                    <h2>Uzmanlık Alanlarımız</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-sm-12 pb-30">
+                            <div class="feature-card">
+                                <div class="feature-card-header">
+                                    <div class="feature-card-thumb feature-card-thumb-green">
+                                        <i class="flaticon-machine-learning-1"></i>
+                                    </div>
+                                    <span>Yapay Zeka</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-sm-12 pb-30">
+                            <div class="feature-card">
+                                <div class="feature-card-header">
+                                    <div class="feature-card-thumb feature-card-thumb-blue">
+                                        <i class="flaticon-machine-learning"></i>
+                                    </div>
+                                    <span>Görüntü İşleme</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-sm-12 pb-30">
+                            <div class="feature-card">
+                                <div class="feature-card-header">
+                                    <div class="feature-card-thumb feature-card-thumb-green">
+                                        <i class="flaticon-machine-learning-1"></i>
+                                    </div>
+                                    <span>Makine Öğrenmesi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature-section -->
+        <!-- Service-section -->
+
+        <!-- Service-section -->
+        <div class="container" dir="ltr">
+            <div class="section-title section-title-lg">
+                <h2>Ürünler & Projeler</h2>
+            </div>
+        </div>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/faceid.avif' %}" style="width:230px;height: 230px" class="img-fluid rounded-md " alt="">
+                <img src="{% static 'images/fidauth.gif' %}" style="width:290px;height: 290px" class="img-fluid rounded-md " alt="">
+            </div>
+            <!--end col-->
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4">
+                    <h3>Fidauth - Akıllı Evrak Validasyonu</h3>
+                    <p>Fidauth, bireylerin kimliklerini çevrimiçi ortamda doğrulamasını <br>
+                        ve evrak validasyon süreçlerinin dijitalleştirilerek otomatize edilmesini
+                        sağlayan <br>
+                        yapay zeka destekli biyometrik  kimlik doğrulama ve akıllı evrak validasyonu süreçleri otomasyonudur</p>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4">
+                    <h3 style="text-align: left">Güvenli Sürüş Karar Destek Sistemi</h3>
+                    <p style="text-align: left">Güvenli Sürüş Karar Destek Sistemi, araç hareket
+                        halindeyken yolu ve sürücü davranışlarını izleyerek elde edilen
+                        verilerden güvenli sürücü davranışlarını çıkarır. Sistem, güvenli olmayan sürüş
+                        durumlarını algılayarak sürücüleri uyarır ve raporlamayı sağlar. Böylece sürücülerin
+                        güvenliği artarken, trafik kazalarının azaltılması hedeflenir <br>
+                    </p>
+                </div>
+            </div>
+            <!--end col-->
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/adas-1.jpg' %}" style="border-radius: 10px 10px 10px 10px;" class="img-fluid rounded-md " alt="">
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/tkks1.jpg' %}" style="border-radius: 10px 10px 10px 10px;" class="img-fluid rounded-md" alt="">
+            </div>
+            <!--end col-->
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4" dir="ltr">
+                    <h3>Yapay Zeka ile Geliştirilmiş Tekstil Kalite Kontrol Sistemi</h3>
+                    <p>Tekstil Kalite Kontrol Sistemi, kumaş kalitesini kontrol etmek için tasarlanmış
+                        kontrol edilebilir ve raporlanabilir bir sistemdir. İnsan gözünün 20-40m/dk hızında kumaşı
+                        kontrol edebildiği düşünülürken, yapay zeka sistemi 100m/dk hızında kontrol yapabilir.
+                        Bu sistem, mikro hata bulma ölçeği ve 4 puan sistemine uygunluk özellikleri ile
+                        yüksek doğrulukta hata yeri tespiti yapabilir ve kumaşları haritalandırabilir.
+                        Ayrıca, kendi kendine öğrenebilme kabiliyeti sayesinde her defasında daha doğru sonuçlar verir.
+                        Kolay entegrasyon özelliği ile bu sistem, iş gücü gereksinimini azaltarak üretim verimliliğini
+                        arttırır
+                    </p>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4">
+                    <h3 style="text-align: left">Görüntü İşleme İle Personel Verimlilik Takibi</h3>
+                    <p style="text-align: left">İşleme başlamadan önce personelin zaman etüdü değerleri alınarak,
+                        görüntü işleme takibinde olan personelin işe başlama ve bitiş zamanlarına göre
+                        verimlilik analizi yapılır. Böylece iş süreçlerindeki verimlilik arttırılır
+                        ve kaynaklar daha verimli kullanılır. Görüntü işleme teknolojisi ile elde edilen veriler,
+                        işletme yöneticilerine detaylı ve güvenilir bir raporlama sunarak karar alma
+                        süreçlerine destek sağlar
+                    </p>
+                </div>
+            </div>
+            <!--end col-->
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/pdwvc.jpg' %}" style="border-radius: 10px 10px 10px 10px;" class="img-fluid rounded-md" alt="">
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/tgic.jpeg' %}" style="border-radius: 10px 10px 10px 10px;" class="img-fluid rounded-md" alt="">
+            </div>
+            <!--end col-->
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4" dir="ltr">
+                    <h3>Tekstilde Görüntü İşleme Çözümleri</h3>
+                    <p>Görüntü işleme teknolojisi sayesinde kumaş ve bez kenarlarının otomatik olarak tespiti
+                        mümkün hale gelmiştir. Bu çözüm sayesinde, en uygun bez dikim koordinatlarının belirlenmesi
+                        ile verimlilik artar ve fire oranları azaltılarak maliyet avantajı
+                        sağlanır
+                    </p>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4">
+                    <h3 style="text-align: left">Yapay Zeka Destekli İş Yeri Güvenliği</h3>
+                    <p style="text-align: left">İş yeri güvenliği, çalışanların sağlığı ve işletmenin sürekliliği açısından
+                        büyük önem taşır. Bu nedenle, yapay zeka destekli bir sistem kullanarak iş yeri güvenliği
+                        daha etkin hale getirilebilir. Bu sistem, kişisel koruyucu ekipmanları ve
+                        iş yeri alan ihlallerini tespit etmek, yangın ve dumanı tespit etmek gibi iş
+                        yerindeki riskleri önceden belirleyebilir. Böylece, işletme prosedürlerinin operasyonel
+                        olarak takibi sağlanarak, çalışanların ve işletmenin güvenliğini üst düzeye çıkarmak hedeflenir
+                    </p>
+                </div>
+            </div>
+            <!--end col-->
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/healthandsafety.jpeg' %}" style="border-radius: 10px 10px 10px 10px;" class="img-fluid rounded-md" alt="">
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-5 col-sm-12">
+                <img src="{% static 'images/rvm.jpg' %}" style="border-radius: 10px 10px 10px 10px;" class="img-fluid rounded-md" alt="">
+            </div>
+            <!--end col-->
+            <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="ms-lg-4">
+                    <h3>Geri Dönüşüm Otomatlarında Orijinallik Tespit Sistemi</h3>
+                    <p>Geri dönüşüm otomatlarında, görüntü işleme ve yapay zeka teknolojisi kullanılarak,
+                        ürünlerin barkod ve DPG analizleri yapılır. Orijinallik tespiti gerçekleştirilerek
+                        geri dönüşüme uygun olmayan ürünlerin otomata atılması önlenir
+                    </p>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <br>
+
+        <br><br>
+        <!-- About-section -->
+        <section class="about-section bg-off-white pt-100 pb-70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12 pb-30">
+                        <div class="about-section-item about-item-image text-center">
+                            <img src="{% static 'images/feature-shape/feature-shape-1.png' %}" alt="shape">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 pb-30" dir="ltr">
+                        <div class="about-section-item about-item-details">
+                            <div class="section-title ">
+                                <small>Hakkımızda</small>
+                                <h2>Biz Kimiz?</h2>
+                            </div>
+                            <div class="about-content">
+                                <p>Norbit Yazılım, yapay zeka ve görüntü işleme tekniklerini kullanarak geliştirdiği ürünler ile müşterilerine otomasyon, dijitalleşme ve optimizasyon değeri katmak üzere çeşitli sektörlere özel teknolojik çözümler sunar.</p>
+                                <a href="{% url 'norbitSite:about-us' %}" class="btn main-btn">Daha Fazla Bilgi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-section -->
+
+        <!-- News-section -->
+        <section class="news-section pt-100 pb-70 bg-off-white">
+            <div class="container" dir="ltr">
+                <div class="section-title section-title-lg">
+                    <small>Blog</small>
+                    <h2>Şirket Haberleri & Son Eklenenler</h2>
+                </div>
+                <div class="row">
+                    {% for object in object_list %}
+                        <div class="col-md-6 col-sm-12 col-lg-4 pb-30">
+                            <div class="blog-card" style="max-width: 400px!important;
+                                min-height: 400px!important;">
+                                <div class="blog-card-image">
+                                    <a href="{% url 'norbitSite:single-blog' object.id %}">
+                                        <img src="{{ object.image.url }}" alt="blog">
+                                    </a>
+                                </div>
+                                <div class="blog-card-text">
+                                    <h3><a href="{% url 'norbitSite:single-blog' object.id %}">{{ object.title }}</a></h3>
+                                    <div class="blog-card-entry">
+                                        <div class="blog-entry-text">
+                                            <h4>Yazar: <strong>{{ object.first_name }} {{ object.last_name }}</strong></h4>
+                                            <p>{{ object.post_date }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+{% endblock %}

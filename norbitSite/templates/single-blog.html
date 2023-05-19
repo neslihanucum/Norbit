@@ -1,0 +1,27 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <br><br><br><br>
+        <!-- Blog-section -->
+        <div class="blog-section pt-100 pb-70" dir="ltr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 pb-30">
+                        <div class="blog-details desk-pad-right-40">
+                            <article>
+                                <div class="forum-details mb-30">
+                                    <div class="blog-details-category">
+                                        <img src="{{ post.image.url }}" alt="blog">
+                                    </div>
+                                    <h3>{{ post.title }}</h3>
+                                    <p>{{ post.body|safe }}</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog-section -->
+{% endblock %}

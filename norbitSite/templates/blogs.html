@@ -1,0 +1,67 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link href="{% static 'css/blogs.css' %}">
+{% endblock %}
+
+{% block content %}
+    <br><br><br><br>
+
+        <!-- Blog-section -->
+        <section class="blog-section pt-100 pb-100">
+            <div class="container" dir="ltr">
+                <div class="section-title section-title-lg">
+                    <small>Blog</small>
+                    <h2>Şirket Haberleri & Son Eklenenler</h2>
+                </div>
+                <div class="row">
+                    {% for object in object_list %}
+                        <div class="col-md-6 col-sm-12 col-lg-4 pb-30">
+                            <div class="blog-card" style="max-width: 400px!important;
+                                     min-height: 400px!important;">
+                                <div class="blog-card-image">
+                                    <a href="{% url 'norbitSite:single-blog' object.id %}">
+                                        <img src="{{ object.image.url }}" alt="blog">
+                                    </a>
+                                </div>
+                                <div class="blog-card-text">
+                                    <h3><a href="{% url 'norbitSite:single-blog' object.id %}">{{ object.title }}</a></h3>
+                                    <div class="blog-card-entry">
+                                        <div class="blog-entry-text">
+                                            <h4>Yazar: <strong>{{ object.first_name }} {{ object.last_name }}</strong></h4>
+                                            <p>{{ object.post_date }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <nav class="page-pagination" aria-label="Page Pagination">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="flaticon-left-chevron"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="flaticon-right-chevron"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Blog-section -->
+{% endblock %}
