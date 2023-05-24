@@ -1,6 +1,16 @@
 ﻿{% extends "base.html" %}
 {% load static %}
 
+{% block style %}
+    <style>
+    @media screen and (max-width: 400px) {
+        #dontshow{
+            display: none!important;
+        }
+    }
+    </style>
+{% endblock %}
+
 {% block content %}
         <!-- Header -->
         <header class="header header-bg-lg header-bg-shape">
@@ -81,9 +91,9 @@
             </div>
         </div>
         <div class="row align-items-center mt-5">
-            <div class="col-md-5 col-sm-12">
-                <img src="{% static 'images/faceid.avif' %}" style="width:230px;height: 230px" class="img-fluid rounded-md " alt="">
-                <img src="{% static 'images/fidauth.gif' %}" style="width:290px;height: 290px" class="img-fluid rounded-md " alt="">
+            <div class="col-md-5 col-sm-12" id="dontshow">
+                <img src="{% static 'images/faceid.avif' %}" style="max-width:230px;max-height: 230px" class="img-fluid rounded-md sml" alt="">
+                <img src="{% static 'images/fidauth.gif' %}" style="max-width:290px;max-height: 290px" class="img-fluid rounded-md sml" alt="">
             </div>
             <!--end col-->
             <div class="col-md-7 col-sm-12 mt-4 mt-sm-0 pt-2 pt-sm-0">

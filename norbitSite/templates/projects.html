@@ -1,6 +1,16 @@
 ﻿{% extends "base.html" %}
 {% load static %}
 
+{% block style %}
+    <style>
+    @media screen and (max-width: 400px) {
+        #dontshow{
+            display: none!important;
+        }
+    }
+    </style>
+{% endblock %}
+
 {% block content %}
     <br><br><br><br><br>
     <br><br><br><br><br>
@@ -11,7 +21,7 @@
             </div>
         </div>
         <div class="row align-items-center mt-5">
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-5 col-sm-12" id="dontshow">
                 <!--
                 <img src="{% static 'images/ocr2.jpg' %}" class="img-fluid rounded-md " alt="">
                 <img src="{% static 'images/faceid.jpg' %}" class="img-fluid rounded-md " alt="">
