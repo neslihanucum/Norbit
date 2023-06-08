@@ -9,7 +9,7 @@ class Post(models.Model):
     last_name = models.CharField(max_length=255, default='admin')
     title = models.CharField(max_length=255)
     title_tag = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='blog_image/%Y/%m/%d/', null=True, blank=True)
+    image = models.ImageField(upload_to='blog_image/%Y/%m/%d/')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = RichTextField(blank=True, null=True)
     post_date = models.DateField(auto_now_add=True)
